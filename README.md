@@ -19,18 +19,9 @@
 - Tailwind
 
 # WireFrame
-- Sign Up
-![BookSignUp](images:Wireframe.png).png
-- Log In![Screenshot 2023-10-31 at 2 19 01 PM](https://github.com/mahirkabir92/bookstorefront/assets/141182263/c59cc235-752a-48b6-baeb-0349fc8aa466)
-
-![BookLogIn](images:Wireframe.png).png
-- Book Cards
-- [BookSignUp (images:Wireframe png)](https://github.com/mahirkabir92/bookstorefront/assets/141182263/75b596fd-4c50-4f4d-b082-447fb1f47812)
-
-- Create Book
-![CreateBook](images:Wireframe.png).png
-- Book List
-![BookList](images:Wireframe.png).png
+<img width="1403" alt="Screenshot 2023-10-31 at 3 34 31 PM" src="https://github.com/mahirkabir92/bookstorefront/assets/141182263/a628fb6a-ec4f-413b-8c9f-9a4e3944a448">
+<img width="1393" alt="Screenshot 2023-10-31 at 3 34 43 PM" src="https://github.com/mahirkabir92/bookstorefront/assets/141182263/562b7bfc-abde-49ba-b121-364ee83df5b5">
+<img width="1397" alt="Screenshot 2023-10-31 at 3 34 23 PM" src="https://github.com/mahirkabir92/bookstorefront/assets/141182263/9e78ed95-b883-4dda-a0fd-878e5a6d4681">
 
 # Future Updates
 
