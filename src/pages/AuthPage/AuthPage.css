@@ -1,0 +1,56 @@
+.AuthPage {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle box shadow */
+}
+
+.AuthPage div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.AuthPage h3 {
+  color: #666;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Adjust input field styling */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style for buttons */
+form button {
+  width: 100%;
+  padding: 10px !important;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff !important;
+  color: white !important;
+  font-size: 1rem;
+  margin: 14px 0 !important;
+}
+
+/* Center the form */
+form {
+  width: 100%;
+  max-width: 400px; /* Limit the form width for better readability */
+}
