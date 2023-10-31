@@ -20,15 +20,15 @@
 
 # WireFrame
 - Sign Up
-![Alt text](<Screenshot 2023-10-31 at 2.24.51 PM.png>)
+![Alt text](!%5BBookSignUp%5D(images:Wireframe.png).png)
 - Log In
-![Alt text](<Screenshot 2023-10-31 at 2.27.01 PM.png>)
+![Alt text](!%5BBookLogIn%5D(images:Wireframe.png).png)
 - Book Cards
-![Alt text](<Screenshot 2023-10-31 at 12.15.06 PM.png>)
+![Alt text](!%5BBookCard%5D(images:Wireframe.png).png)
 - Create Book
-![Alt text](<Screenshot 2023-10-31 at 12.14.55 PM.png>)
+![Alt text](!%5BCreateBook%5D(images:Wireframe.png).png)
 - Book List
-![Alt text](<Screenshot 2023-10-31 at 12.14.45 PM.png>)
+![Alt text](!%5BBookList%5D(images:Wireframe.png).png)
 # Future Updates
 
 - Add picures of the books + authors
