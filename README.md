@@ -24,7 +24,7 @@
 - Log In
 ![BookLogIn](images:Wireframe.png).png
 - Book Cards
-- [! BookSignUp (images:Wireframe png)](https://github.com/mahirkabir92/bookstorefront/assets/141182263/75b596fd-4c50-4f4d-b082-447fb1f47812)
+- [BookSignUp (images:Wireframe png)](https://github.com/mahirkabir92/bookstorefront/assets/141182263/75b596fd-4c50-4f4d-b082-447fb1f47812)
 
 - Create Book
 ![CreateBook](images:Wireframe.png).png
