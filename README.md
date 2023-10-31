@@ -4,7 +4,8 @@
 # Getting Started
 
 - Trello (https://trello.com/b/zmTMnstS/bookstore)
-- Deployment
+- Deployment Frontend (https://bookstore-8vxm.onrender.com)
+- Deployment Backend (https://bookstore-backend-szf5.onrender.com)
 
 # Technologies Used
 
@@ -18,7 +19,16 @@
 - Tailwind
 
 # WireFrame
-
+- Sign Up
+![Alt text](<Screenshot 2023-10-31 at 2.24.51 PM.png>)
+- Log In
+![Alt text](<Screenshot 2023-10-31 at 2.27.01 PM.png>)
+- Book Cards
+![Alt text](<Screenshot 2023-10-31 at 12.15.06 PM.png>)
+- Create Book
+![Alt text](<Screenshot 2023-10-31 at 12.14.55 PM.png>)
+- Book List
+![Alt text](<Screenshot 2023-10-31 at 12.14.45 PM.png>)
 # Future Updates
 
 - Add picures of the books + authors
