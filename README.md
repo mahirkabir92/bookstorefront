@@ -20,15 +20,16 @@
 
 # WireFrame
 - Sign Up
-![Alt text](!%5BBookSignUp%5D(images:Wireframe.png).png)
+![BookSignUp](images:Wireframe.png).png
 - Log In
-![Alt text](!%5BBookLogIn%5D(images:Wireframe.png).png)
+![BookLogIn](images:Wireframe.png).png
 - Book Cards
-![Alt text](!%5BBookCard%5D(images:Wireframe.png).png)
+![BookCard](images:Wireframe.png).png
 - Create Book
-![Alt text](!%5BCreateBook%5D(images:Wireframe.png).png)
+![CreateBook](images:Wireframe.png).png
 - Book List
-![Alt text](!%5BBookList%5D(images:Wireframe.png).png)
+![BookList](images:Wireframe.png).png
+
 # Future Updates
 
 - Add picures of the books + authors
