@@ -5,6 +5,8 @@ import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSnackbar } from "notistack";
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 const EditBook = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
@@ -17,7 +19,7 @@ const EditBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:4741/books/${id}`)
+      .get(`${BACKEND_URL}/books/${id}`)
       .then((response) => {
         setAuthor(response.data.author);
         setPublishYear(response.data.publishYear);
@@ -39,7 +41,7 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-      .put(`http://localhost:4741/books/${id}`, data)
+      .put(`${BACKEND_URL}/books/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Edited successfully", { variant: "success" });
