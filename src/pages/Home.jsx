@@ -7,10 +7,12 @@ import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
 import BooksTable from "../components/home/BooksTable";
 import BooksCard from "../components/home/BooksCard";
+import { getUser } from "../utilities/user-services";
 
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 const Home = () => {
+  const currentUser = getUser();
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showType, setShowType] = useState("table");
@@ -54,9 +56,9 @@ const Home = () => {
       {loading ? (
         <Spinner />
       ) : showType === "table" ? (
-        <BooksTable books={books} />
+        <BooksTable books={books} currentUser={currentUser} />
       ) : (
-        <BooksCard books={books} />
+        <BooksCard books={books} currentUser={currentUser} />
       )}
     </div>
   );

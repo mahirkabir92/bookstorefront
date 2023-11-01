@@ -4,10 +4,12 @@ import Spinner from "../components/Spinner";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSnackbar } from "notistack";
+import { getToken } from "../utilities/user-services";
 
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 const EditBook = () => {
+  const token = getToken();
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [publishYear, setPublishYear] = useState("");
@@ -41,7 +43,9 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-      .put(`${BACKEND_URL}/books/${id}`, data)
+      .put(`${BACKEND_URL}/books/${id}`, data, {
+        headers: { Authorization: `Bearer ${token}` },
+      })
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Edited successfully", { variant: "success" });
@@ -49,8 +53,7 @@ const EditBook = () => {
       })
       .catch((error) => {
         setLoading(false);
-        // alert('An error happened. Please Chack console');
-        enqueueSnackbar("Error", { variant: "error" });
+        enqueueSnackbar(error.response.data, { variant: "error" });
         console.log(error);
       });
   };

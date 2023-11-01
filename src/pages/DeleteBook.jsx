@@ -4,10 +4,12 @@ import Spinner from "../components/Spinner";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSnackbar } from "notistack";
+import { getToken } from "../utilities/user-services";
 
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 const DeleteBook = () => {
+  const token = getToken();
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { id } = useParams();
@@ -16,7 +18,9 @@ const DeleteBook = () => {
   const handleDeleteBook = () => {
     setLoading(true);
     axios
-      .delete(`${BACKEND_URL}/books/${id}`)
+      .delete(`${BACKEND_URL}/books/${id}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      })
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Deleted successfully", { variant: "success" });
@@ -24,8 +28,7 @@ const DeleteBook = () => {
       })
       .catch((error) => {
         setLoading(false);
-        // alert('An error happened. Please Chack console');
-        enqueueSnackbar("Error", { variant: "error" });
+        enqueueSnackbar(error.response.data, { variant: "error" });
         console.log(error);
       });
   };
